@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+header {
+    background-color: #322B4D;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: left;
+    width: 27%;
+    height: 1080px;
+    background: #68599E;
+    padding: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+article {
+    float: left;
+    padding: 18px;
+    width: 68%;
+    background-color: #9D86F0;
+    /* height: 350px; only for demonstration, should be removed */
+}
+
+footer {
+    background-color: #322B4D;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
